@@ -18,7 +18,7 @@ class SuperHeroCreator extends Component {
     }
     handleSubmit = (event) => {
         event.preventDefault();
-        this.props.SuperHeroCreator(this.state)
+        this.props.createNewHero(this.state)
     }
 
     render() { 
