@@ -1,5 +1,6 @@
-import React, {Component} from 'react';
 import './App.css';
+import React, {Component} from 'react';
+import SuperheroTable from './displayName/SuperheroTable';
 
 
 class App extends Component{
@@ -30,9 +31,8 @@ class App extends Component{
     return(
         <div className= "App">
           <h1> My React App from Component Worksheet</h1>
-          <h2>Click to add a name to the list</h2>
+          <button>Click to add a name to the list</button>
           <SuperheroTable superheroes={this.state.superheroes}/>
-          {/* <button onClick={this.addName}>Add Name</button> */}
           </div>  
         )
     }
